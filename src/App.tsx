@@ -1,9 +1,11 @@
 import * as React from 'react';
 import './App.css';
+import DetailedResults from './components/DetailedResults';
 
 const logo = require('./logo.svg');
 
 class App extends React.Component {
+  
   render() {
     return (
       <div className="App">
@@ -14,6 +16,7 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <DetailedResults name="Mt. Rainier" location="WA"/>
       </div>
     );
   }
